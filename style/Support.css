@@ -55,6 +55,36 @@ nav{
         display: none;
     }
 }
+.mobile-menu {
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    background: #0F0F0F;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.mobile-menu a {
+    color: #BFBFBF;
+    text-decoration: none;
+    padding: 14px;
+    border-bottom: 1px solid #1F1F1F;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+    background: #1F1F1F;
+    color: #fff;
+    padding-left: 20px;
+}
+.mobile-menu.show {
+    display: flex;
+}
 .contaner{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -66,6 +96,10 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    opacity: 0;
+    transform: translateX(-100px);
+
+    animation: leftCard 1s ease forwards;
     h1{
         font-size: 48px;
         font-weight: 700;
@@ -87,6 +121,38 @@ nav{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:50px;
+    opacity: 0;
+    transform: translateX(100px);
+
+    animation: rightCard 1s ease forwards;
+    animation-delay: 0.4s;
+}
+@keyframes leftCard{
+
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes rightCard{
+
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
 }
 .name{
     display:flex;
@@ -277,10 +343,14 @@ section{
 }
 
 .Q h6 {
+    display: none;
     margin: 0;
     font-size: 16px;
     color: #999999;
     font-weight: 400;
+}
+.ques.open .Q h6 {
+    display: block;
 }
 
 .icon-q , .icon-ques {
@@ -299,6 +369,9 @@ section{
         transparent
     );
     box-shadow: 0 0 5px red;
+}
+.ques.open .icon-ques svg path {
+    d: path("M19 12.998H5v-2h14z");
 }
 .line4{
     display: none;
@@ -353,6 +426,16 @@ section{
             }
         }
     }
+}
+.animation{
+    opacity: 0;
+    transform: translateY(80px);
+    transition: 0.8s;
+}
+
+.animation.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 footer{
     display: flex;

@@ -57,6 +57,36 @@ nav{
         display: none;
     }
 }
+.mobile-menu {
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    background: #0F0F0F;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.mobile-menu a {
+    color: #BFBFBF;
+    text-decoration: none;
+    padding: 14px;
+    border-bottom: 1px solid #1F1F1F;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+    background: #1F1F1F;
+    color: #fff;
+    padding-left: 20px;
+}
+.mobile-menu.show {
+    display: flex;
+}
 .bg-dark-card {
     background-color: #1A1A1A;
     border-radius: 12px;
@@ -88,7 +118,16 @@ nav{
     background-color: #0F0F0F;
     font-size: 0.95rem;
 }
-/* أضف هذه التنسيقات لملف style.css الخاص بك */
+.hidden-row{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.hidden-row.show-row{
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .footer-section {
     background-color: #0F0F0F;
@@ -105,10 +144,9 @@ nav{
 }
 
 .footer-section li a:hover {
-    color: #E50914 !important; /* لون الهوية عند التمرير */
+    color: #E50914 !important;
 }
 
-/* أيقونات السوشيال ميديا */
 .social-icon {
     display: inline-flex;
     align-items: center;
@@ -176,6 +214,16 @@ nav{
             }
         }
     }
+}
+.animation{
+    opacity: 0;
+    transform: translateY(80px);
+    transition: 0.8s;
+}
+
+.animation.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 footer{
     display: flex;

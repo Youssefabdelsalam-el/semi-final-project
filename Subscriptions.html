@@ -23,8 +23,14 @@
                 <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 20 20"><path fill="#fff" fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75m7 10.5a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1-.75-.75M2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10" clip-rule="evenodd"/></svg>
             </div>
         </header>
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="./index.html">Home</a>
+            <a href="./Movies&Shows.html">Movies & Shows</a>
+            <a href="./Support.html">Support</a>
+            <a href="#">Subscriptions</a>
+        </div>
     <div class="container py-5">
-    <div class="text-center mb-5">
+    <div class="text-center mb-5 animation">
         <h1 class="fw-bold text-white">Choose the plan that's right for you</h1>
         <p class="text-secondary">Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences.</p>
         <div class="toggle-container mx-auto mt-4">
@@ -36,7 +42,7 @@
     </div>
 
     <div class="row g-4 mb-5 justify-content-center">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 animation">
             <div class="card h-100 bg-dark-card border-dark p-4">
                 <h3 class="h5 fw-bold text-white mb-3">Basic Plan</h3>
                 <p class="text-secondary small mb-4">Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.</p>
@@ -48,7 +54,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 animation">
             <div class="card h-100 bg-dark-card border-dark p-4">
                 <h3 class="h5 fw-bold text-white mb-3">Standard Plan</h3>
                 <p class="text-secondary small mb-4">Access to a wider selection of movies and shows, including most new releases and exclusive content.</p>
@@ -60,7 +66,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 animation">
             <div class="card h-100 bg-dark-card border-dark p-4">
                 <h3 class="h5 fw-bold text-white mb-3">Premium Plan</h3>
                 <p class="text-secondary small mb-4">Access to a widest selection of movies and shows, including all new releases and Offline Viewing.</p>
@@ -81,7 +87,7 @@
     <div class="table-responsive">
         <table class="table table-dark table-bordered border-dark align-middle">
             <thead>
-                <tr class="bg-black text-white">
+                <tr class="bg-black text-white ">
                     <th class="p-4">Features</th>
                     <th class="p-4">Basic</th>
                     <th class="p-4">Standard <span class="badge bg-danger ms-2 fw-normal">Popular</span></th>
@@ -89,20 +95,20 @@
                 </tr>
             </thead>
             <tbody class="text-secondary">
-                <tr><td class="p-4">Price</td><td class="p-4">$9.99/Month</td><td class="p-4">$12.99/Month</td><td class="p-4">$14.99/Month</td></tr>
-                <tr><td class="p-4">Content</td><td class="p-4">Access to some new releases.</td><td class="p-4">Most new releases and exclusive content.</td><td class="p-4">All new releases and Offline Viewing.</td></tr>
-                <tr><td class="p-4">Devices</td><td class="p-4">Watch on one device</td><td class="p-4">Watch on two devices</td><td class="p-4">Watch on four devices</td></tr>
-                <tr><td class="p-4">Free Trial</td><td class="p-4">7 Days</td><td class="p-4">7 Days</td><td class="p-4">7 Days</td></tr>
-                <tr><td class="p-4">HDR</td><td class="p-4">No</td><td class="p-4">Yes</td><td class="p-4">Yes</td></tr>
-                <tr><td class="p-4">Dolby Atmos</td><td class="p-4">No</td><td class="p-4">Yes</td><td class="p-4">Yes</td></tr>
-                <tr><td class="p-4">Ad - Free</td><td class="p-4">No</td><td class="p-4">Yes</td><td class="p-4">Yes</td></tr>
-                <tr><td class="p-4">Offline Viewing</td><td class="p-4">No</td><td class="p-4">Yes, for select titles</td><td class="p-4">Yes, for all titles</td></tr>
-                <tr><td class="p-4">Family Sharing</td><td class="p-4">No</td><td class="p-4">Yes, up to 5 members</td><td class="p-4">Yes, up to 6 members</td></tr>
+                <tr class="hidden-row"><td class="p-4">Price</td><td class="p-4">$9.99/Month</td><td class="p-4">$12.99/Month</td><td class="p-4">$14.99/Month</td></tr>
+                <tr class="hidden-row"><td class="p-4">Content</td><td class="p-4">Access to some new releases.</td><td class="p-4">Most new releases and exclusive content.</td><td class="p-4">All new releases and Offline Viewing.</td></tr>
+                <tr class="hidden-row"><td class="p-4">Devices</td><td class="p-4">Watch on one device</td><td class="p-4">Watch on two devices</td><td class="p-4">Watch on four devices</td></tr>
+                <tr class="hidden-row"><td class="p-4">Free Trial</td><td class="p-4">7 Days</td><td class="p-4">7 Days</td><td class="p-4">7 Days</td></tr>
+                <tr class="hidden-row"><td class="p-4">HDR</td><td class="p-4">No</td><td class="p-4">Yes</td><td class="p-4">Yes</td></tr>
+                <tr class="hidden-row"><td class="p-4">Dolby Atmos</td><td class="p-4">No</td><td class="p-4">Yes</td><td class="p-4">Yes</td></tr>
+                <tr class="hidden-row"><td class="p-4">Ad - Free</td><td class="p-4">No</td><td class="p-4">Yes</td><td class="p-4">Yes</td></tr>
+                <tr class="hidden-row"><td class="p-4">Offline Viewing</td><td class="p-4">No</td><td class="p-4">Yes, for select titles</td><td class="p-4">Yes, for all titles</td></tr>
+                <tr class="hidden-row"><td class="p-4">Family Sharing</td><td class="p-4">No</td><td class="p-4">Yes, up to 5 members</td><td class="p-4">Yes, up to 6 members</td></tr>
             </tbody>
         </table>
     </div>
 </div>
-<div class="start-free-img">
+<div class="start-free-img animation">
             <img src="./imges/Background Images.png" alt="">
             <div class="contant">
                 <div class="contant-text">
@@ -113,7 +119,7 @@
             </div>
         </div>
         </section>
-        <footer>
+        <footer class="animation">
         <div class="Site-content">
             <div class="card-site-content">
                 <h5>Home</h5>
@@ -185,6 +191,6 @@
             </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+<script src="./javascript/script.js"></script>
 </body>
 </html>
