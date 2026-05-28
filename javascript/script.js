@@ -28,12 +28,10 @@ const questions = document.querySelectorAll(".ques");
 questions.forEach((q) => {
     q.addEventListener("click", () => {
         
-        // يقفل كل اللي فات
         questions.forEach(item => {
             if (item !== q) item.classList.remove("open");
         });
 
-        // يفتح/يقفل الحالي
         q.classList.toggle("open");
     });
 });
